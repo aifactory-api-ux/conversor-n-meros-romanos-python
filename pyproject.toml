@@ -1,0 +1,25 @@
+# Configuración única del proyecto "roman-numerals-lib".
+# Metadatos PEP 621 (empaquetado como dependencia interna), layout de módulo
+# único en "src/" y configuración de pytest (import sin instalación).
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roman-numerals-lib"
+version = "1.0.0"
+description = "Minimal roman numeral conversion library (to_roman / from_roman), standard library only."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["roman"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

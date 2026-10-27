@@ -1,0 +1,16 @@
+```yaml
+openapi: 3.1.0
+info:
+  title: roman — Minimal Roman Numeral Conversion Library
+  version: 1.0.0
+  description: >-
+    This project is a small Python library consisting of one source module
+    (src/roman.py), one pytest test module (tests/test_roman.py), and a brief
+    README.md. The library exposes exactly two public functions, to_roman and
+    from_roman, used by the internal engineering team as a dependency inside
+    other Python scripts. No web server, no HTTP endpoints, no CLI, no
+    frontend, no database, no container, no cloud infrastructure, no
+    third-party runtime dependencies, no network calls, no environment
+    configuration, no observability stack.
+paths: {}
+```
